@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Guru</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon3.ico.png">
+</head>
+<body>
+        <h1>HR's Top Picks 😋 </h1>
+
+    
+    <form action="/fetchRecipeAndGuidline" method="POST" class="buttons" >
+        <button type="submit" value="brownie" name="choice"><img src="/icons/brownie.png" class="icon" alt=""></button>
+        <button type="submit" value="eclair" name="choice"><img src="/icons/eclair.png" class="icon" alt=""></button>
+        <button type="submit" value="twix-bar" name="choice"><img src="/icons/chocolate.png" class="icon" alt=""></button>
+    </form>
+
+    <!-- <form action="/guideline" method="POST" class="buttons">
+        <button type="submit" value="brownie" name="choice"><img src="/icons/brownie.png" class="icon" alt=""></button>
+        <button type="submit" value="eclair" name="choice"><img src="/icons/eclair.png" class="icon" alt=""></button>
+        <button type="submit" value="twix-bar" name="choice"><img src="/icons/chocolate.png" class="icon" alt=""></button>
+    </form> -->
+
+    <div id="ingredientsContainer" class="hidden">
+    <% if (recipe) { %>
+        <h2 id="recipeTitle">
+            <%= recipe.name %>
+        </h2>
+
+        <h3>Ingredients:</h3>
+        <ul id="IngredientsList">
+            <div class="ingredient-section">
+
+                <% if (recipe.steps.step01) { %>
+                <li class="ingredientCategory">
+                    <%= recipe.steps.step01.name %>
+                </li>
+                <% recipe.steps.step01.ingredients.forEach(ingredient => { %>
+                    <li class="ingredient-quantity">
+                        <%= ingredient.quantity %> x <%= ingredient.name %>
+                    </li>
+                <% }) %>
+            <% } %>
+            </div>
+            
+            <div class="ingredient-section">
+                <% if (recipe.steps.step02) { %>
+                <li class="ingredientCategory">
+                    <%= recipe.steps.step02.name %>
+                </li>
+                <% recipe.steps.step02.ingredients.forEach(ingredient => { %>
+                    <li class="ingredient-quantity">
+                        <%= ingredient.quantity %> x <%= ingredient.name %>
+                    </li>
+                    <% }) %>
+                <% } %>
+            </div>
+
+            <div class="ingredient-section">
+                <% if (recipe.steps.step03) { %>
+                <li class="ingredientCategory">
+                    <%= recipe.steps.step03.name %>
+                </li>
+                <% recipe.steps.step03.ingredients.forEach(ingredient => { %>
+                    <li class="ingredient-quantity">
+                        <%= ingredient.quantity %> x <%= ingredient.name %>
+                    </li>
+                    <% }) %>
+                <% } %>
+            </div>
+
+            
+                   
+        </ul>
+
+   <% } else { %>
+
+    <h2>Pick the dessert to get the recipe 👆</h2>
+
+  <% } %>
+</div>
+
+<div id="instructionsContainer" class="hidden">
+
+    <% if (guideline) { %>
+        <!-- <h2 id="recipeTitle">
+            <%= guideline.name %>
+        </h2> -->
+
+        <h3 class="instruction-title">Instructions:</h3>
+        <ul id="InstructionsList">
+            <div class="Instruction-section">
+
+                <% if (guideline.methods.step01) { %>
+                <li class="instructionCategory">
+                    <%= guideline.methods.step01.name %>
+                </li>
+                <% guideline.methods.step01.method.forEach(instruction => { %>
+                    <li class="instruction">
+                        <%= instruction.name %>
+                    </li>
+                <% }) %>
+            <% } %>
+            </div>
+            
+            <div class="Instruction-section">
+
+                <% if (guideline.methods.step02) { %>
+                <li class="instructionCategory">
+                    <%= guideline.methods.step02.name %>
+                </li>
+                <% guideline.methods.step02.method.forEach(instruction => { %>
+                    <li class="instruction">
+                        <%= instruction.name %>
+                    </li>
+                <% }) %>
+            <% } %>
+            </div>
+
+            <div class="Instruction-section">
+
+                <% if (guideline.methods.step03) { %>
+                <li class="instructionCategory">
+                    <%= guideline.methods.step03.name %>
+                </li>
+                <% guideline.methods.step03.method.forEach(instruction => { %>
+                    <li class="instruction">
+                        <%= instruction.name %>
+                    </li>
+                <% }) %>
+            <% } %>
+            </div>
+
+            
+                   
+        </ul>
+
+   <% } %>
+
+</div>
+    
+</body>
+</html>

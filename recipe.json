@@ -1,0 +1,220 @@
+[
+    {
+      "id": "0001",
+      "type": "dessert",
+      "name": "Fudgy Brownies",
+      "preparation time": "60 minutes (1 hour)",
+      "steps": {
+        "step01":
+          {
+          "name": "Brownie Base",
+          "ingredients": [
+          {
+            "name": "Butter",
+            "quantity": "5 oz"
+          },
+          {
+            "name": "Sugar",
+            "quantity": "1 Cup"
+          },
+          {
+            "name": "Eggs",
+            "quantity":"2"
+          },
+          {
+            "name": "Instant Espresso Powder ",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "Warm Water",
+            "quantity": "2 Tbsp"
+          },
+          {
+            "name": "Vanilla Extract",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "Chocolate (Melted)",
+            "quantity": "7 oz"
+          },
+          {
+            "name": "Cocoa Powder",
+            "quantity": "3 Tbsp"
+          },
+          {
+            "name": "Flour",
+            "quantity": "1 Cup"
+          },
+          {
+            "name": "Chocolate Chips",
+            "quantity": "1/2 Cup"
+          },
+          {
+            "name": "Chopped Nuts",
+            "quantity": "1/2 Cup"
+          }
+        ]
+        },
+        "step02": {
+          "name": "Ganache Topping",
+          "ingredients": [
+          {
+            "name": "Butter",
+            "quantity": "2 Tbsp"
+          },
+          {
+            "name": "Heavy Cream",
+            "quantity": "1 Cup"
+          },
+          {
+            "name": "Chopped Chocolate",
+            "quantity": "170g"
+          }
+          ]
+        }
+    }
+    },
+    {
+      "id": "0002",
+      "type": "dessert",
+      "name": "French Eclairs",
+      "preparation time": "140 minutes (2 hours & 20 minutes)",
+      "steps": {
+        "step01":
+          {
+          "name": "Choux Pastry",
+          "ingredients": [
+          {
+            "name": "Butter",
+            "quantity": "115g"
+          },
+          {
+            "name": "Water",
+            "quantity": "1 Cup"
+          },
+          {
+            "name": "Flour",
+            "quantity": "1 Cup"
+          },
+          {
+            "name": "Eggs",
+            "quantity": "4"
+          }
+        ]
+        },
+        "step02": {
+          "name": "Pastry Cream",
+          "ingredients": [
+          {
+            "name": "Egg Yolks",
+            "quantity": "4"
+          },
+          {
+            "name": "Cornflour ",
+            "quantity": "1/3 Cup"
+          },
+          {
+            "name": "Milk ",
+            "quantity": "2 & 1/4 Cup"
+          },
+          {
+            "name": "Vanilla Extract ",
+            "quantity": "2 tsp"
+          },
+          {
+            "name": "Sugar ",
+            "quantity": "1/3 Cup"
+          },
+          {
+            "name": "Butter ",
+            "quantity": "2 Tbsp"
+          }
+          ]
+        },
+        "step03":
+          {
+          "name": "Ganache Topping",
+          "ingredients": [
+          {
+            "name": "Heavy Cream",
+            "quantity": "500 ml"
+          },
+          {
+            "name": "Butter",
+            "quantity": "2 Tbsp"
+          },
+          {
+            "name": "Chopped Chocolate",
+            "quantity": "340g"
+          }
+        ]
+        }
+    }
+    },
+    {
+      "id": "0003",
+      "type": "dessert",
+      "name": "Twix Bars",
+      "preparation time": "90 minutes (1 hour & 30 minutes)",
+      "steps": {
+        "step01":
+          {
+          "name": "Shortbread Crust",
+          "ingredients": [
+          {
+            "name": "Butter",
+            "quantity": "230g"
+          },
+          {
+            "name": "Sugar",
+            "quantity": "60g"
+          },
+          {
+            "name": "Flour",
+            "quantity": "320g"
+          }
+        ]
+        },
+        "step02": {
+          "name": "Caramel Layer",
+          "ingredients": [
+          {
+            "name": "Condensed Milk",
+            "quantity": "1 Can (approximately 400g)"
+          },
+          {
+            "name": "Brown Sugar ",
+            "quantity": "50g"
+          },
+          {
+            "name": "Butter ",
+            "quantity": "45g"
+          },
+          {
+            "name": "Vanilla Extract ",
+            "quantity": "1 tsp"
+          },
+          {
+            "name": "Salt ",
+            "quantity": "1/2 tsp"
+          }
+          ]
+        },
+        "step03":
+          {
+          "name": "Chocolate Topping",
+          "ingredients": [
+          {
+            "name": "Butter",
+            "quantity": "2 Tbsp"
+          },
+          {
+            "name": "Chopped Chocolate",
+            "quantity": "200g"
+          }
+        ]
+        }
+    }
+    }
+  ]
+  
