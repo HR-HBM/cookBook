@@ -1,9 +1,8 @@
 [build]
+  base = ""
+  publish = "public"
+  functions = "api"
+  command = "npm run build"
 
-command = "npm run build"
-
-[[redirects]]
-
-from = "/*"
-to = "/.netlify/api/index"
-status = 200
+[dev]
+  functions = "api"
