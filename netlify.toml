@@ -1,0 +1,9 @@
+[build]
+
+command = "npm run build"
+
+[[redirects]]
+
+from = "/*"
+to = "/.netlify/api/index"
+status = 200
