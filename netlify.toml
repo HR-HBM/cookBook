@@ -1,8 +1,0 @@
-[build]
-  base = ""
-  publish = "public"
-  functions = "api"
-  command = "npm run build"
-
-[dev]
-  functions = "api"
