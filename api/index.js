@@ -1,6 +1,7 @@
-import express from "express";
+import express, { Router } from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import serverless from "serverless-http";
 
 dotenv.config();
 
@@ -68,6 +69,9 @@ app.post("/fetchRecipeAndGuidline", (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
 })
+
+app.use('/.netlify/api/index.js', router);
+module.exports.handler = serverless(app);
 
 // module.exports = app;
 // module.exports.handler = serverless(app);

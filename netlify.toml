@@ -1,6 +1,6 @@
 [build]
   base = ""
-  publish = "public"
+  publish = "dist"
   functions = "api"
   command = "npm run build"
 
