@@ -11,6 +11,8 @@ h1 {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
     padding: 10px 0;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+
 }
 
 .icon {
@@ -99,6 +101,8 @@ button:hover {
     margin: 3vw;
     flex-direction: column;
     border-radius: 25px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+
 }
 
 .instruction-title {
