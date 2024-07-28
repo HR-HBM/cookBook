@@ -1,28 +1,24 @@
 body {
-    margin: 30px;
+    margin: 4vw;
     background-image: url("data:image/svg+xml,%3Csvg%20id='patternId'%20width='100%25'%20height='100%25'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern%20id='a'%20patternUnits='userSpaceOnUse'%20width='48'%20height='48'%20patternTransform='scale(2)%20rotate(0)'%3E%3Crect%20x='0'%20y='0'%20width='100%25'%20height='100%25'%20fill='hsla(54,%2087%,65%,1)'/%3E%3Cpath%20d='M5.323%207.811a10.233%2010.233%200%2001-11.77%200m60.894%200a10.234%2010.234%200%2001-11.77%200M-6.447%2040.19a10.234%2010.234%200%2001%2011.77%200m37.354%200a10.235%2010.235%200%2001%2011.77%200m-24.562-7.817a10.234%2010.234%200%2001-11.77%200m0-16.746A10.234%2010.234%200%2001%2024%2013.767c2.107%200%204.162.649%205.886%201.86'%20stroke-linecap='square'%20stroke-width='1'%20stroke='hsla(291,%2064%,42%,1)'%20fill='none'/%3E%3Cpath%20d='M15.627%205.323a10.234%2010.234%200%2001%200-11.77m16.746%200a10.234%2010.234%200%2001%200%2011.77M15.627%2054.447a10.233%2010.233%200%2001%200-11.77m16.746%200a10.234%2010.234%200%2001%200%2011.77m7.817-24.562a10.234%2010.234%200%2001%200-11.77m-32.379%200a10.234%2010.234%200%2001%200%2011.771'%20stroke-linecap='square'%20stroke-width='1'%20stroke='hsla(339,%2070%,60%,1)'%20fill='none'/%3E%3C/pattern%3E%3C/defs%3E%3Crect%20width='800%25'%20height='800%25'%20transform='translate(0,0)'%20fill='url(%23a)'/%3E%3C/svg%3E");
     text-align: center;
 }
 
 h1 {
-    /* display: inline; */
     font-size: 4rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(225, 82, 131, 1) ;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
     padding: 10px 0;
 }
 
 .icon {
-    width: 150px;
-    height: 150px;
-
+    width: 10vw;
+    height: 10vw;
 } 
 
-
 .ingredientCategory, .instructionCategory {
-    /* font-style: italic; */
     list-style: none;
     font-weight: 700;
     margin: 10px 0;
@@ -42,21 +38,16 @@ ul {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-around;
-    /* align-items: center; */
-    /* box-sizing: border-box;
-    overflow: hidden; */
     text-align: left;
     
 }
 
 .ingredient-section {
-    /* margin: 0 100px; */
-    width: 200px;
+    width: 15vw;
     
 }
 
 .ingredient-quantity, .instruction {
-    /* font-style: italic; */
     margin-bottom: 3px;
     list-style-type: square;
 }
@@ -74,7 +65,7 @@ h3 {
 .buttons {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 3vw;
 }
 
 button {
@@ -84,12 +75,12 @@ button {
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     padding: 0;
     margin: 0 60px;
-    width: 180px;
-    height: 180px;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
     transition: transform 0.1s, box-shadow 0.1s;
@@ -102,19 +93,17 @@ button:hover {
 }
 
 #ingredientsContainer, #instructionsContainer {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3vw 0;
     display: flex;
-    margin: 40px;
+    margin: 3vw;
     flex-direction: column;
-    /* align-items: center; */
     border-radius: 25px;
 }
 
 .instruction-title {
 
     margin-top: 25px;
-
 }
 
 #InstructionsList {
@@ -124,10 +113,134 @@ button:hover {
     justify-content: flex-start;
 }
 
-/* .Instruction-section {
-    width: 65wv;
-} */
 .Instruction-section {
     width: 90%;
-    margin-left: 50px;
+    margin-left: 3vw;
 }
+
+.hidden {
+    background-color: rgba(255, 0, 0, 0);
+    height: 15px;
+}
+
+
+/* responsive layout */
+
+
+/* Mobile phones (portrait and landscape) */
+@media (max-width: 599px) {
+    
+    h1 {
+        font-size: 2rem;
+        border-radius: 20px;
+    }
+    
+    .icon {
+        width: 14vw;
+        height: 14vw;
+    } 
+    
+    .ingredientCategory, .instructionCategory {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: space-around;        
+    }
+    
+    .ingredient-section {
+        width: 60vw;
+        
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .buttons {
+        margin: 20vw 3vw;
+    }
+    
+    button { 
+        margin: 5vw;
+        width: 18vw;
+        height: 18vw;    
+    }
+    
+    #InstructionsList {
+        width: 95%;
+    }
+    
+    .Instruction-section {
+        margin-left: 7vw;
+    }
+
+    .ingredient-quantity, .instruction {
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 600px) and (max-width: 767px) {
+   
+    h1 {
+        font-size: 2.5rem;
+        border-radius: 22px;
+    }
+    
+    
+    .ingredientCategory, .instructionCategory {
+        font-size: 1.25rem;
+    }
+    
+    ul {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: space-around;        
+    }
+    
+    .ingredient-section {
+        width: 60vw;
+        
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        margin: 7px;
+        font-size: 1.6rem;
+    }
+    
+    .buttons {
+        margin: 8vw 3vw;
+    }
+    
+    button { 
+        margin: 5vw;
+        width: 18vw;
+        height: 18vw;    
+    }
+    
+    #InstructionsList {
+        width: 95%;
+    }
+    
+    .Instruction-section {
+        margin-left: 7vw;
+    }
+
+    .ingredient-quantity, .instruction {
+        margin-bottom: 10px;
+    }
+    
+}
+
