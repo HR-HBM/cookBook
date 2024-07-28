@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/icons/favicon3.ico.png">
 </head>
 <body>
-        <h1>HR's Top Picks 😋 </h1>
+        <h1>Baked Delicacies 😋 </h1>
 
     
     <form action="/fetchRecipeAndGuidline" method="POST" class="buttons" >
@@ -18,7 +18,7 @@
     </form>
 
 
-    <div id="ingredientsContainer" class="hidden">
+    <div id="ingredientsContainer" class="">
     <% if (recipe) { %>
         <h2 id="recipeTitle">
             <%= recipe.name %>
@@ -77,9 +77,11 @@
   <% } %>
 </div>
 
-<div id="instructionsContainer" class="hidden">
+
 
     <% if (guideline) { %>
+
+        <div id="instructionsContainer" class="">
 
         <h3 class="instruction-title">Instructions:</h3>
         <ul id="InstructionsList">
@@ -128,10 +130,16 @@
             
                    
         </ul>
+    </div>
 
-   <% } %>
 
-</div>
+        <% } else { %>
+
+            <div class="hidden"></div>
+
+        <%  } %>
+
+        
     
 </body>
 </html>
